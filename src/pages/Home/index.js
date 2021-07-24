@@ -8,6 +8,13 @@ const Home = () => {
       <p className="home-container__description">
         Add items section allows you to put items in your todo list
       </p>
+      <p className="home-container__description">
+        List items section list all your items in the app and allows you to
+        crossout those one that are completed.
+      </p>
+      <p className="home-container__description">
+        Delete items section allows you delete items from your item list
+      </p>
     </div>
   );
 };
