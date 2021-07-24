@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import AddTodo from "../../redux/actions/Todos";
+import { addTodo } from "../../redux/actions/Todos";
 
 const Form = () => {
   const [userItem, setUserItem] = useState("");
@@ -12,8 +12,10 @@ const Form = () => {
 
   const addItem = () => {
     const id = new Date().getTime();
-    dispatch(AddTodo(id, userItem));
-    setUserItem("");
+    if (userItem !== "") {
+      dispatch(addTodo(id, userItem));
+      setUserItem("");
+    }
   };
   return (
     <div className="add-items-container__input input">

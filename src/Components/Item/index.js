@@ -1,16 +1,15 @@
 import "./Item.css";
 
 const todoItemCompletedCss = {
-  false: "list__item",
-  true: "list__item list__item--completed"
+  false: "list-todo__item",
+  true: "list-todo__item list-todo__item--completed"
 };
 
 const Item = ({ id, text, completed, onClick }) => {
   return (
-    // <li onClick={() => onClick(id)} className={todoItemCompletedCss[completed]}>
-    //   {text}
-    // </li>
-    <li className={todoItemCompletedCss[completed]}>{text}</li>
+    <li onClick={() => onClick(id)} className={todoItemCompletedCss[completed]}>
+      {text}
+    </li>
   );
 };
 
