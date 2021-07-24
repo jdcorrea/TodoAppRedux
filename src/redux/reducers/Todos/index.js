@@ -1,12 +1,6 @@
-import { ADD_TODO } from "../../types";
+import { ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "../../types";
 
-const initialState = [
-  {
-    id: "123123",
-    text: "Inicio",
-    completed: false
-  }
-];
+const initialState = [];
 
 const todoReducer = (state = initialState, action) => {
   console.log(action, state);
@@ -20,6 +14,20 @@ const todoReducer = (state = initialState, action) => {
           completed: false
         }
       ];
+    case TOGGLE_TODO:
+      return state.map((todoItem) => {
+        if (todoItem !== action.id) {
+          return todoItem;
+        }
+        return {
+          ...todoItem,
+          completed: !todoItem.completed
+        };
+      });
+    case DELETE_TODO:
+      return (state = state.filter((todoItem) => {
+        return todoItem.id !== action.id;
+      }));
     default:
       return state;
   }
