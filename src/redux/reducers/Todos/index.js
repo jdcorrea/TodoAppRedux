@@ -16,9 +16,7 @@ const todoReducer = (state = initialState, action) => {
       ];
     case TOGGLE_TODO:
       return state.map((todoItem) => {
-        console.log("@ids: bus, map: ", action.id, todoItem);
         if (todoItem.id !== action.id) {
-          console.log("no igual");
           return todoItem;
         }
         return {

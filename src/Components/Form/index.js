@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../redux/actions/Todos";
+import Button from "../../Components/Button";
 
 const Form = () => {
   const [userItem, setUserItem] = useState("");
   const dispatch = useDispatch();
+  const buttonProps = {
+    type: "add"
+  };
 
   const newUserItem = (event) => {
     setUserItem(event.target.value);
@@ -25,9 +29,7 @@ const Form = () => {
         onChange={newUserItem}
         value={userItem}
       ></input>
-      <button className="input__buttton" type="button" onClick={addItem}>
-        add
-      </button>
+      <Button {...buttonProps} onClick={addItem} />
     </div>
   );
 };

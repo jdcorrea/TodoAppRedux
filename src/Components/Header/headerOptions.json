@@ -8,5 +8,15 @@
     "option": "add-items",
     "optionText": "Add Items",
     "path": "/add-items"
+  },
+  {
+    "option": "list-items",
+    "optionText": "List Items",
+    "path": "/list-items"
+  },
+  {
+    "option": "delete-items",
+    "optionText": "Delete Items",
+    "path": "/delete-items"
   }
 ]
