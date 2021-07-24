@@ -1,7 +1,7 @@
 {
-  "name": "todo-list-routing-redux",
+  "name": "todoapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Todo app using redux, routing and react.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
