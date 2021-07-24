@@ -1,0 +1,15 @@
+.btn {
+  text-transform: uppercase;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.btn--add {
+  background-color: rgb(90, 250, 90);
+  color: #02016d;
+}
+
+.btn--delete {
+  background-color: rgb(255, 0, 0);
+  color: #02016d;
+}

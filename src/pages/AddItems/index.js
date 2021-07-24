@@ -4,11 +4,12 @@ import ListItems from "../../Components/ListItems";
 import "./styles.css";
 
 const AddItems = () => {
+  const type = { type: "add" };
   return (
     <div className="add-items-container">
       <Form />
       <div className="add-items-container__list">
-        <ListItems />
+        <ListItems {...type} />
       </div>
     </div>
   );
