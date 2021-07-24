@@ -1,0 +1,12 @@
+[
+  {
+    "option": "home",
+    "optionText": "Home",
+    "path": "/"
+  },
+  {
+    "option": "add-items",
+    "optionText": "Add Items",
+    "path": "/add-items"
+  }
+]

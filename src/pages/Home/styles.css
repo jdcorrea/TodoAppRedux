@@ -1,0 +1,22 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-container__title {
+  text-align: center;
+  color: #00e5e8;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.home-container__description {
+  text-align: center;
+  color: #f0f600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

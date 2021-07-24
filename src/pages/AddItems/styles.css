@@ -1,0 +1,31 @@
+.add-items-container {
+  display: flex;
+  align-items: space-around;
+  flex-direction: column;
+  background-color: #38369a;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.add-items-container__input {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  padding: 3px;
+}
+
+.add-items-container__list {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 30px);
+  padding: 0 30px;
+}
+
+.input__buttton {
+  background-color: rgb(90, 250, 90);
+  color: #02016d;
+  text-transform: uppercase;
+  padding: 3px;
+  border-radius: 3px;
+}
