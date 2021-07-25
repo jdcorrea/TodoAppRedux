@@ -8,12 +8,12 @@ import "./styles.css";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Provider store={store}>
-    <StrictMode>
+  <StrictMode>
+    <Provider store={store}>
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>
-    </StrictMode>
-  </Provider>,
+    </Provider>
+  </StrictMode>,
   rootElement
 );
